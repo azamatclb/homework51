@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Name</title>
+</head>
+<body>
+    <h1>Вас приветствует симулятор кормления кота</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="name">Имя кота:</label>
+        <input type="text" id="name" name="name" required>
+        <input type="submit" value="Начать">
+    </form>
+</body>
+</html>
